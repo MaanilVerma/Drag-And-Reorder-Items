@@ -1,0 +1,18 @@
+.container {
+  padding: 15px;
+  background: rgb(190, 190, 190);
+  border-radius: 5px;
+  font-size: 14px;
+  width: 50%;
+  margin: 5px auto;
+  cursor: grab;
+  position: relative;
+}
+
+.container::after {
+  content: url("../../assets/GridIcon.svg");
+  color: black;
+  position: absolute;
+  right: 10px;
+  font-size: 14px;
+}
