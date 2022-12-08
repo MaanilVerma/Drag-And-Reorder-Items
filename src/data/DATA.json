@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Shopping in Barcelona",
+        "order": 1
+    },
+      {
+        "title": "Famous Shopping Streets",
+        "order": 2
+      },
+      {
+        "title": "Shopping Malls",
+        "order": 3
+      },
+      {
+        "title": "Markets",
+        "order": 4
+      },
+      {
+        "title": "Opening times",
+        "order": 5
+      },
+      {
+        "title": "Sales tax refunds",
+        "order": 6
+      },
+      {
+        "title": "You may be interested in",
+        "order": 7
+      },
+      {
+        "title": "Where to stay",
+        "order": 8
+      }
+          
+]
