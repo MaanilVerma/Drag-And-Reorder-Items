@@ -3,8 +3,8 @@ import styles from "./Container.module.scss";
 
 type Props = {
   containerTitle: string;
-  handleDrag: () => void;
-  handleDrop: () => void;
+  handleDrag: (event: any) => void;
+  handleDrop: (event: any) => void;
 };
 
 const Container: React.FC<Props> = ({
@@ -27,13 +27,3 @@ const Container: React.FC<Props> = ({
 };
 
 export { Container };
-
-// style={{
-//     backgroundColor: boxColor,
-//     border: "1px solid",
-//     borderColor: boxColor,
-//     borderRadius: "5px",
-//     color: "#FFF",
-//     width: "30%",
-//     height: "100px"
-//   }}
