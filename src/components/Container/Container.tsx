@@ -3,8 +3,8 @@ import styles from "./Container.module.scss";
 
 type Props = {
   containerTitle: string;
-  handleDrag: (event: any) => void;
-  handleDrop: (event: any) => void;
+  handleDrag: (event: React.DragEvent<HTMLDivElement>) => void;
+  handleDrop: (event: React.DragEvent<HTMLDivElement>) => void;
 };
 
 const Container: React.FC<Props> = ({

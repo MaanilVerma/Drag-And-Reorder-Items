@@ -6,14 +6,15 @@ import { Container } from "../Container";
 import styles from "./Outlines.module.scss";
 
 const Outlines = () => {
-  const [dragId, setDragId] = React.useState();
-  const [boxes, setBoxes] = React.useState(DATA);
+  const [dragId, setDragId] = React.useState<string>("");
+  const [boxes, setBoxes] =
+    React.useState<{ title: string; order: number }[]>(DATA);
 
-  const handleDrag = (event: any) => {
+  const handleDrag = (event: React.DragEvent<HTMLDivElement>) => {
     setDragId(event.currentTarget.id);
   };
 
-  const handleDrop = (event: any) => {
+  const handleDrop = (event: React.DragEvent<HTMLDivElement>) => {
     const dragBox: any = boxes.find((box) => box.title === dragId);
     const dropBox: any = boxes.find(
       (box) => box.title === event.currentTarget.id
